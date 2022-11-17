@@ -7,16 +7,16 @@ const TaskCard = () => {
 
   console.log(TasksExample);
 
-  return (<>
-    
-    {TasksExample.map((task) => (
+  return (
+    <>
+      {TasksExample.map((task) => (
         <div key={task.id}>
-            <h1>{task.titulo}</h1>
-            <p>{task.contenido}</p>
+          <h1>{task.titulo}</h1>
+          <p>{task.contenido}</p>
         </div>
-    ))}
-  
-  </>);
+      ))}
+    </>
+  );
 };
 
 export default TaskCard;
